@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM.COM</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Baloo Bhai 2', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('Img/gym2.jpg')
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        margin: -4px auto;
+    }
+
+    .left img {
+        width: 70px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 7px;
+    }
+
+    .mid {
+        /* border: 2px solid blue; */
+        margin: 20px;
+        padding: 4px;
+        display: block;
+        width: 65%;
+        margin: 3px auto;
+
+
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+
+    .navbar li {
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(46, 178, 211);
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', sans-serif;
+        background-color: black;
+        color: white;
+        border: 2px solid rgb(46, 178, 211);
+        border-radius: 10px;
+        padding: 3px 10px;
+        margin: 0px 4px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(46, 178, 211);
+    }
+
+    #phn {
+        width: 15px;
+        margin-top: 0px;
+        margin-bottom: -3px;
+        margin-left: -2px;
+        margin-right: 2px;
+        filter: invert(100%);
+        
+    }
+
+    #eml {
+        width: 17px;
+        margin-top: -2px;
+        margin-bottom: -4px;
+        margin-left: -2px;
+        margin-right: 2px;
+        filter: invert(100%);
+    }
+
+    .container {
+        border: 2px solid rgb(46, 178, 211);
+        border-radius: 28px;
+        padding: 75px;
+        margin: 41px 109px;
+        width: 33%;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', sans-serif;
+        text-align: center;
+        display: block;
+        width: 350px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 3px auto;
+        font-size: 16px;
+        border-radius: 10px;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container .btn {
+        display: block;
+        margin: 20px auto;
+        width: 350px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="Img\logo.png">
+            <div>GYM.COM</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"><img id="phn" src="Img\Phone.png"> Call Us </button>
+            <button class="btn"><img src="Img\Emal.png" id="eml"> Email Us</button>
+        </div>
+        <div class="container">
+            <h1>Welcome to GYM.COM</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your City">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Email Id">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Phone No.">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+
+        </div>
+    </header>
+
+</body>
+
+</html>
